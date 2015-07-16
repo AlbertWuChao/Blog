@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<!-- 自动启用驼峰命名规则 -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+	
+	<!-- 别名 -->
+	<typeAliases>
+		<typeAlias alias="Blog" type="com.albert.mbt.entity.Blog" />
+		<typeAlias alias="BlogVo" type="com.albert.mbt.vo.BlogVo" />
+		<package name="com.albert.mbt.entity"/>
+	</typeAliases>
+	<!-- 默认添为包下的类添加别名 -->
+	<!--
+		每一个在包 domain.blog 中的 Java Bean，在没有注解的情况下，
+		会使用 Bean 的首字母小写的非限定类名来作为它的别名。 比如 domain.blog.Author
+		的别名为 author；若有注解，则别名为其注解值。看下面的例子：
+@Alias("Author")
+public class Author {
+    ...
+}
+	-->
+	<!-- 
+	<typeAliases>
+	  <package name="com.albert.mbt.entity"/>
+	</typeAliases>
+	 -->
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/mbt" />
+				<property name="username" value="root" />
+				<property name="password" value="" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="com/albert/mbt/mapper/BlogMapper.xml" />
+	</mappers>
+</configuration>

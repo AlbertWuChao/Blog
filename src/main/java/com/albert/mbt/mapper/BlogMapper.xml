@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.albert.mbt.mapper.BlogMapper">
+  <select id="selectBlog" resultType="com.albert.mbt.entity.Blog">
+    select * from Blog where id = #{id}
+  </select>
+  
+  <select id="selectBlogByTitle" resultType="com.albert.mbt.entity.Blog">
+    select * from Blog where title like concat('%',#{title},'%');
+  </select>
+  
+  <select id="selectBlogVoByTitle" resultType="com.albert.mbt.vo.BlogVo">
+    select title, content context from Blog where title like concat('%',#{title},'%');
+  </select>
+  
+</mapper>
