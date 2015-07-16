@@ -1,4 +1,4 @@
-package com.albert.mbt.entity;
+package com.albert.blog.entity;
 
 import java.io.Serializable;
 import java.util.Date;

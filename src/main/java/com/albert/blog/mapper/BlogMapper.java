@@ -1,9 +1,9 @@
-package com.albert.mbt.mapper;
+package com.albert.blog.mapper;
 
 import java.util.List;
 
-import com.albert.mbt.entity.Blog;
-import com.albert.mbt.vo.BlogVo;
+import com.albert.blog.entity.Blog;
+import com.albert.blog.vo.BlogVo;
 
 public interface BlogMapper {
 	

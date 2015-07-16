@@ -1,4 +1,4 @@
-package com.albert.mbt.util;
+package com.albert.blog.util;
 
 import java.io.IOException;
 import java.io.InputStream;

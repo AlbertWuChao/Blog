@@ -1,4 +1,4 @@
-package com.albert.mbt.vo;
+package com.albert.blog.vo;
 
 public class BlogVo {
 	private String title;

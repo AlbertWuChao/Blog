@@ -1,4 +1,4 @@
-package com.albert.mbt.entity;
+package com.albert.blog.entity;
 
 public class Blog extends Entity {
 	private static final long serialVersionUID = -7383531760679170150L;
@@ -69,7 +69,8 @@ public class Blog extends Entity {
 
 	@Override
 	public String toString() {
-		return "Blog [id=" + id + ", title=" + title + ", content=" + content + "]";
+		return "Blog [id=" + id + ", title=" + title + ", content=" + content
+				+ "]";
 	}
 
 }

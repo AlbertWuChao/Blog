@@ -1,4 +1,4 @@
-package com.albert.mbt.util;
+package com.albert.blog.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

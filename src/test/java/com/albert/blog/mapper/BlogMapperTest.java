@@ -1,4 +1,4 @@
-package com.albert.mbt.mapper;
+package com.albert.blog.mapper;
 
 import javax.annotation.Resource;
 
@@ -8,7 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.albert.mbt.entity.Blog;
+import com.albert.blog.entity.Blog;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:application.xml")

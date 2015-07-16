@@ -1,13 +1,13 @@
-package com.albert.mbt.util;
+package com.albert.blog.util;
 
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
-import com.albert.mbt.entity.Blog;
-import com.albert.mbt.mapper.BlogMapper;
-import com.albert.mbt.vo.BlogVo;
+import com.albert.blog.entity.Blog;
+import com.albert.blog.mapper.BlogMapper;
+import com.albert.blog.vo.BlogVo;
 
 public class MybatisFactoryTest {
 

@@ -17,7 +17,7 @@
 	<!-- 开启组件扫描 -->
 	<!-- <context:component-scan base-package="com.he" /> -->
 
-	<context:component-scan base-package="com.albert.mbt">
+	<context:component-scan base-package="com.albert.blog">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -48,7 +48,7 @@
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="mapperLocations" value="classpath*:com.albert.mbt.mapper/**/*.xml" />
+		<property name="mapperLocations" value="classpath*:com.albert.blog.mapper/*Mapper.xml" />
 	</bean>
 
 

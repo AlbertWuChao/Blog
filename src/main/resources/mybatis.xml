@@ -11,8 +11,8 @@
 	
 	<!-- 别名 -->
 	<typeAliases>
-		<typeAlias alias="Blog" type="com.albert.mbt.entity.Blog" />
-		<typeAlias alias="BlogVo" type="com.albert.mbt.vo.BlogVo" />
+		<typeAlias alias="Blog" type="com.albert.blog.entity.Blog" />
+		<typeAlias alias="BlogVo" type="com.albert.blog.vo.BlogVo" />
 		<package name="com.albert.mbt.entity"/>
 	</typeAliases>
 	<!-- 默认添为包下的类添加别名 -->
@@ -43,6 +43,6 @@ public class Author {
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="com/albert/mbt/mapper/BlogMapper.xml" />
+		<mapper resource="com/albert/blog/mapper/BlogMapper.xml" />
 	</mappers>
 </configuration>
