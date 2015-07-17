@@ -15,12 +15,12 @@ import com.albert.blog.entity.Blog;
 @Transactional
 public class BlogMapperTest {
 
-	@Resource(name = "blogMapper")
+	@Resource(name = "bloaMapper")
 	private BlogMapper blogMapper;
 
 	@Test
 	public void test() {
-		Blog blog = blogMapper.selectBlog(1L);
+		Blog blog = blogMapper.get(1L);
 		System.out.println(blog);
 	}
 

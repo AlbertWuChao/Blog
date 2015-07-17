@@ -15,7 +15,7 @@ public class MybatisFactoryTest {
 	public void testInit() {
 		SqlSession session = MybatisFactory.getSession();
 		try {
-			Blog blog = session.selectOne("com.albert.mbt.mapper.BlogMapper.selectBlog", 1);
+			Blog blog = session.selectOne("com.albert.blog.mapper.BlogMapper.selectBlog", 1);
 			System.out.println(blog);
 		} finally {
 			session.close();
